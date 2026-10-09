@@ -1,0 +1,11 @@
+{
+  "name": "kaydens-legendary-osint",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The greatest doxxing tool ever. 700+ public records, data leaks, and Google dorks.",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'static build - nothing to compile'"
+  },
+  "license": "MIT"
+}
