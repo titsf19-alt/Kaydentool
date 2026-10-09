@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kayden's Legendary OSINT Tool</title>
+<meta name="description" content="The greatest doxxing tool ever. Search 700+ public records sites, data leaks, and Google dorks in one click." />
+<link rel="stylesheet" href="style.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕵️</text></svg>" />
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <h1>🕵️ Kayden's Legendary OSINT Tool</h1>
+    <p class="tagline">Every public record. Every leak. Every dork. One search.</p>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="search-panel">
+    <form id="osint-form" autocomplete="off">
+      <div class="row">
+        <div class="field">
+          <label for="first">First Name</label>
+          <input type="text" id="first" placeholder="John" />
+        </div>
+        <div class="field">
+          <label for="last">Last Name</label>
+          <input type="text" id="last" placeholder="Doe" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="city">City <span class="opt">(optional)</span></label>
+          <input type="text" id="city" placeholder="Austin" />
+        </div>
+        <div class="field">
+          <label for="state">State <span class="opt">(optional)</span></label>
+          <select id="state">
+            <option value="">— Any State —</option>
+          </select>
+        </div>
+      </div>
+
+      <details class="advanced">
+        <summary>⚙️ Advanced Search</summary>
+        <div class="row">
+          <div class="field">
+            <label for="age">Age</label>
+            <input type="text" id="age" placeholder="35" />
+          </div>
+          <div class="field">
+            <label for="address">Address</label>
+            <input type="text" id="address" placeholder="123 Main St" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="john@example.com" />
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" placeholder="555-555-5555" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="johndoe42" />
+          </div>
+          <div class="field">
+            <label for="domain">Domain / Company</label>
+            <input type="text" id="domain" placeholder="acme.com" />
+          </div>
+        </div>
+      </details>
+
+      <div class="actions">
+        <button type="submit" class="btn-primary">🚀 Run Legendary Search</button>
+        <button type="button" id="leak-btn" class="btn-danger">🔓 Data Leak Checker</button>
+        <button type="button" id="dork-btn" class="btn-alt">🔎 Google Dorks</button>
+        <button
